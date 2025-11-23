@@ -1,0 +1,17 @@
+{
+  "title": "WeatherNow",
+  "searchPlaceholder": "Search city...",
+  "searchButton": "Search",
+  "today": "Today",
+  "live": "Live",
+  "wind": "Wind",
+  "humidity": "Humidity",
+  "feelsLike": "Feels Like",
+  "forecast": "Forecast",
+  "hourlyForecast": "Hourly Forecast",
+  "error": "City not found",
+  "loading": "Loading...",
+  "useMyLocation": "Use My Location",
+  "locationLoading": "Getting your location...",
+  "locationDenied": "Location permission denied"
+}

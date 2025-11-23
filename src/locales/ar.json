@@ -1,0 +1,17 @@
+{
+  "title": "طقس الآن",
+  "searchPlaceholder": "ابحث عن مدينة...",
+  "searchButton": "بحث",
+  "today": "اليوم",
+  "live": "مباشر",
+  "wind": "الرياح",
+  "humidity": "الرطوبة",
+  "feelsLike": "يشعر وكأنه",
+  "forecast": "التوقعات",
+  "hourlyForecast": "التوقعات بالساعة",
+  "error": "المدينة غير موجودة",
+  "loading": "جاري التحميل...",
+  "useMyLocation": "استخدم موقعي",
+  "locationLoading": "جاري تحديد موقعك...",
+  "locationDenied": "تم رفض إذن الموقع"
+}
