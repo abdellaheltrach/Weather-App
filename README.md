@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather application built with React and TypeScript that provides real-time weather information with geolocation support and multi-language capabilities.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live application: [https://weatherappelt.netlify.app/](https://weatherappelt.netlify.app/)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Real-time Weather Data** - Get current weather conditions for any location
+- **Geolocation Support** - Automatically detect and display weather for your current location
+- **Hourly Forecast** - View detailed hourly weather predictions
+- **Multi-language Support** - Available in English and Arabic with automatic language detection
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Modern UI** - Clean and intuitive interface built with Tailwind CSS and Radix UI components
+- **Accessibility** - ARIA labels and keyboard navigation support
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 19** - Latest version with modern features
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **i18next** - Internationalization framework
+- **Axios** - HTTP client for API requests
+- **Lucide React** - Beautiful icon library
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 or higher recommended)
+- npm or bun package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/abdellaheltrach/Weather-App.git
+cd weather
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+# or
+bun install
 ```
+
+3. Start the development server:
+
+```bash
+npm run dev
+# or
+bun dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+# or
+bun run build
+```
+
+The production-ready files will be in the `dist` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+# or
+bun preview
+```
+
+## 📝 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## 🌍 Internationalization
+
+The app supports multiple languages:
+
+- English (en)
+- Arabic (ar)
+
+Language is automatically detected based on browser settings and can be switched within the app.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
